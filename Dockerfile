@@ -1,4 +1,14 @@
+#
+#  Author: int32bit
+#  Date: 2016-05-25 13:58:07 +0000 (Sat, 16 Jan 2016)
+#
+#  vim:ts=4:sts=4:sw=4:et
+#
+#  https://github.com/int32bit/docker-alluxio
+#
+
 FROM java:8-jre-alpine
+MAINTAINER int32bit krystism@gmail.com
 ENV ALLUXIO_VERSION 1.0.1
 
 RUN set -ex \
