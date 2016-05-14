@@ -35,7 +35,7 @@ RUN set -ex \
 	&& cp /root/.ssh/id_rsa /etc/ssh/ssh_host_dsa_key \
 	&& cp /root/.ssh/id_rsa /etc/ssh/ssh_host_ed25519_key \
 	&& cat /root/.ssh/id_rsa.pub >>/root/.ssh/authorized_keys \
-	&& echo "localhost" $(cat /root/.ssh/id_rsa.pub | cut -d ' ' -f 1-2) >>/root/.ssh/known_hosts \
+	&& echo "localhost" $(cat /root/.ssh/id_rsa.pub | cut -d ' ' -f 1-2) >>/root/.ssh/known_hosts
 
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
