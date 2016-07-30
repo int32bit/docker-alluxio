@@ -4,9 +4,9 @@ Alluxio, formerly Tachyon, Memory Speed Virtual Distributed Storage System. See 
 
 ## About this image
 
-Built from `jre-alpine`, So it may be more lightweight!
+Built from `jre-alpine`, So it is very lightweight!
 
-## How to use this image 
+## Quick Start 
 
 ```bash
 docker build -t krystism/alluxio .
