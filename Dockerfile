@@ -7,9 +7,9 @@
 #  https://github.com/int32bit/docker-alluxio
 #
 
-FROM java:8-jre-alpine
+FROM java:openjdk-8-jdk-alpine
 MAINTAINER int32bit krystism@gmail.com
-ENV ALLUXIO_VERSION 1.0.1
+ENV ALLUXIO_VERSION 1.3.0
 
 # Download Alluxio and remove sourcecode
 RUN set -ex \
